@@ -9,10 +9,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #fdf6f3; --card: #ffffff; --ink: #3a2f30; --ink-soft: #7a6b6c;
-  --blush: #f3d9d6; --blush-deep: #e3a9a8; --rose: #c97b86; --rose-deep: #a85b68;
-  --gold: #d4a24a; --gold-deep: #9c7328; --gold-pale: #faf1de; --line: #eee0d8;
-  --sage: #7da398; --sage-deep: #5e8478; --apricot: #e97d69; --copper: #9f634e;
+--bg: #fdf6f3; --card: #ffffff; --ink: #3a2f30; --ink-soft: #7a6b6c;
+--blush: #f3d9d6; --blush-deep: #e3a9a8; --rose: #c97b86; --rose-deep: #a85b68;
+--gold: #d4a24a; --gold-deep: #9c7328; --gold-pale: #faf1de; --line: #eee0d8;
+--sage: #7da398; --sage-deep: #5e8478; --apricot: #e97d69; --copper: #9f634e;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Lato', sans-serif; line-height: 1.6; }
@@ -78,40 +78,39 @@ h1 { font-family: 'Fraunces', serif; font-size: 32px; font-weight: 600; line-hei
 </head>
 <body>
 <div class="wrap">
-  <div class="brand-row">
-  <div class="brand-left">
-    <video autoplay loop muted playsinline><source src="mumty-logo-animation.mp4" type="video/mp4"></video>
-    <span class="brand-name">Mumty</span>
-  </div>
-  <div style="display:flex; gap:8px;">
-    <a class="back-link" href="https://zugang-mumty-businessaufbau.netlify.app/">🏠 Start</a>
-    <a class="back-link" href="index.html">← Übersicht</a>
-  </div>
+<div class="brand-row">
+<div class="brand-left">
+<video autoplay loop muted playsinline><source src="mumty-logo-animation.mp4" type="video/mp4"></video>
+<span class="brand-name">Mumty</span>
 </div>
-  <div class="name-modal-overlay" id="name-modal">
-  <div class="name-modal-box">
-    <p class="name-modal-title">Schön, dass du da bist!</p>
-    <p class="name-modal-sub">Wie dürfen wir dich nennen?</p>
-    <input id="name-input" type="text" placeholder="Dein Vorname" maxlength="20" onkeydown="if(event.key==='Enter')submitName()">
-    <button class="submit-btn" onclick="submitName()">Los geht's</button>
-  </div>
+<div style="display:flex; gap:8px;">
+<a class="back-link" href="https://zugang-mumty-businessaufbau.netlify.app/">🏠 Start</a>
+<a class="back-link" href="index.html">← Übersicht</a>
 </div>
-  <div class="hero">
-    <div class="avatar"><span class="user-initial-slot">?</span></div>
-    <div>
-      <p class="greeting">Hallo <span class="user-name-slot">du</span> 👋</p>
-      <p class="eyebrow">AlphaMUM · Modul 7</p>
-      <h1>Mitbewerber-Analyse</h1>
-    </div>
-  </div>
-
-  <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
-  <div class="progress-label" id="progress-label"></div>
-
-  <div class="card">
-    
+</div>
+<div class="name-modal-overlay" id="name-modal">
+<div class="name-modal-box">
+<p class="name-modal-title">Schön, dass du da bist!</p>
+<p class="name-modal-sub">Wie dürfen wir dich nennen?</p>
+<input id="name-input" type="text" placeholder="Dein Vorname" maxlength="20" onkeydown="if(event.key==='Enter')submitName()">
+<button class="submit-btn" onclick="submitName()">Los geht's</button>
+</div>
+</div>
+<div class="hero">
+<div class="avatar"><span class="user-initial-slot">?</span></div>
+<div>
+<p class="greeting">Hallo <span class="user-name-slot">du</span> 👋</p>
+<p class="eyebrow">AlphaMUM · Modul 7</p>
+<h1>Mitbewerber-Analyse</h1>
+</div>
+</div>
+<div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+<div class="progress-label" id="progress-label"></div>
+<div class="card">
 <p>Nun kommt ein unglaublich wichtiger Schritt: Du wirst dich intensiv mit deinen Mitbewerbern auseinandersetzen und sie genau analysieren. Diese Analyse wird mehr als nur eine Sammlung von Fakten – sie wird zu einem kraftvollen Werkzeug, das dir hilft, deine eigene Positionierung und Strategie zu schärfen.</p>
 <p>In deine Mitbewerber-Tabelle trägst du alles ein: Name, Online-Auftritt, Angebot & USPs, Preise, Garantien, Freebies, Funnel, Promos, Content und Ads deiner Mitbewerber — bis hin zur Bewertung der Ähnlichkeit zu deinem eigenen Business.</p>
+<div class="example"><strong>📊 Deine Mitbewerber-Tabelle (Excel-Vorlage)</strong><br>Lade dir hier deine eigene Kopie der Mitbewerber-Tabelle herunter — vorausgefüllt mit einem Beispiel, für deine 10 größten Mitbewerber.<br><br>Die Datei landet in deinem Downloads-Ordner. Speichere sie dir an einem Ort, wo du sie wiederfindest (z.B. eigener Ordner "Meine Mitbewerber-Analyse") — das ist bereits deine eigene, private Kopie, die nur dir gehört.<br><br>
+<a href="Mitbewerber-Analyse-Vorlage.xlsx" download style="display:inline-block;background:linear-gradient(135deg, var(--sage-deep), var(--sage));color:#fff;font-size:13px;padding:9px 18px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(94,117,104,.3);">⬇ Vorlage herunterladen (Excel)</a></div>
 <div class="example"><strong>🔧 Tool für Claude: Mitbewerber-Analyse</strong><br>Diese Tabelle musst du nicht allein zusammensuchen — Claude kann für dich im Web recherchieren und deine Mitbewerber-Tabelle direkt befüllen (Auftritt, Preise, Content, Ads, Ähnlichkeit zu deinem Business).<br><br>
 <strong>So richtest du es ein:</strong><br>
 1. ZIP herunterladen und entpacken<br>
@@ -119,127 +118,121 @@ h1 { font-family: 'Fraunces', serif; font-size: 32px; font-weight: 600; line-hei
 3. In Claude einfach schreiben: "Mitbewerber-Analyse" oder "Konkurrenzanalyse" — Claude recherchiert und baut dir die Tabelle<br><br>
 <a href="mitbewerber-analyse-skill.zip" download style="display:inline-block;background:linear-gradient(135deg, var(--gold), var(--rose));color:#fff;font-size:13px;padding:9px 18px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(156,115,40,.3);">⬇ Skill herunterladen</a></div>
 <button class="mark-done" onclick="toggleDone(this,1)">Lektion abgeschlossen</button>
-
-  </div>
-
-  <div class="nav-row"><a class="nav-btn" href="modul-6-8.html">← Modul 6.8</a><a class="nav-btn primary" href="modul-7-1.html">Modul 7.1 →</a></div>
-  <p class="footer-note">AlphaMUM · Teil des MUMTY Business-Aufbauprogramms</p>
+</div>
+<div class="nav-row"><a class="nav-btn" href="modul-6-8.html">← Modul 6.8</a><a class="nav-btn primary" href="modul-7-1.html">Modul 7.1 →</a></div>
+<p class="footer-note">AlphaMUM · Teil des MUMTY Business-Aufbauprogramms</p>
 </div>
 <script>
-
 function toggleLesson(el) { el.classList.toggle('open'); }
 function saveState(storeKey) {
-  const data = {};
-  document.querySelectorAll('textarea').forEach(t => data[t.dataset.key] = t.value);
-  document.querySelectorAll('.checklist input[type=checkbox]').forEach(c => data[c.dataset.check] = c.checked);
-  document.querySelectorAll('.mark-done').forEach((b,i) => data['done_'+i] = b.classList.contains('active'));
-  try { localStorage.setItem(storeKey, JSON.stringify(data)); } catch(e) {}
-  try {
-    const all = JSON.parse(localStorage.getItem('alphamum_progress') || '{}');
-    const filled = document.querySelectorAll('textarea');
-    let done = 0; filled.forEach(t => { if (t.value.trim().length>0) done++; });
-    all[storeKey] = { total: filled.length, done: done };
-    localStorage.setItem('alphamum_progress', JSON.stringify(all));
-  } catch(e) {}
+const data = {};
+document.querySelectorAll('textarea').forEach(t => data[t.dataset.key] = t.value);
+document.querySelectorAll('.checklist input[type=checkbox]').forEach(c => data[c.dataset.check] = c.checked);
+document.querySelectorAll('.mark-done').forEach((b,i) => data['done_'+i] = b.classList.contains('active'));
+try { localStorage.setItem(storeKey, JSON.stringify(data)); } catch(e) {}
+try {
+const all = JSON.parse(localStorage.getItem('alphamum_progress') || '{}');
+const filled = document.querySelectorAll('textarea');
+let done = 0; filled.forEach(t => { if (t.value.trim().length>0) done++; });
+all[storeKey] = { total: filled.length, done: done };
+localStorage.setItem('alphamum_progress', JSON.stringify(all));
+} catch(e) {}
 }
 function loadState(storeKey) {
-  try {
-    const raw = localStorage.getItem(storeKey);
-    if (!raw) return;
-    const data = JSON.parse(raw);
-    document.querySelectorAll('textarea').forEach(t => { if (data[t.dataset.key]) t.value = data[t.dataset.key]; });
-    document.querySelectorAll('.checklist input[type=checkbox]').forEach(c => { if (data[c.dataset.check]) c.checked = true; });
-    document.querySelectorAll('.mark-done').forEach((b,i) => { if (data['done_'+i]) b.click(); });
-  } catch(e) {}
+try {
+const raw = localStorage.getItem(storeKey);
+if (!raw) return;
+const data = JSON.parse(raw);
+document.querySelectorAll('textarea').forEach(t => { if (data[t.dataset.key]) t.value = data[t.dataset.key]; });
+document.querySelectorAll('.checklist input[type=checkbox]').forEach(c => { if (data[c.dataset.check]) c.checked = true; });
+document.querySelectorAll('.mark-done').forEach((b,i) => { if (data['done_'+i]) b.click(); });
+} catch(e) {}
 }
 function toggleDone(btn, idx) {
-  btn.classList.toggle('active');
-  btn.textContent = btn.classList.contains('active') ? 'Abgeschlossen' : 'Lektion abgeschlossen';
+btn.classList.toggle('active');
+btn.textContent = btn.classList.contains('active') ? 'Abgeschlossen' : 'Lektion abgeschlossen';
 }
 function updateProgress() {
-  const t = document.querySelectorAll('textarea');
-  let filled = 0; t.forEach(x => { if (x.value.trim().length>0) filled++; });
-  const pct = t.length ? Math.round(filled/t.length*100) : 100;
-  const f = document.getElementById('progress-fill'); if (f) f.style.width = pct + '%';
-  const l = document.getElementById('progress-label'); if (l) l.textContent = filled + ' von ' + t.length + ' Reflexionen beantwortet';
+const t = document.querySelectorAll('textarea');
+let filled = 0; t.forEach(x => { if (x.value.trim().length>0) filled++; });
+const pct = t.length ? Math.round(filled/t.length*100) : 100;
+const f = document.getElementById('progress-fill'); if (f) f.style.width = pct + '%';
+const l = document.getElementById('progress-label'); if (l) l.textContent = filled + ' von ' + t.length + ' Reflexionen beantwortet';
 }
 function encodeFormData(data) {
-  return Object.keys(data).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k])).join('&');
+return Object.keys(data).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k])).join('&');
 }
 function submitAnswers(formName, moduleLabel) {
-  let id = localStorage.getItem('alphamum_session_id');
-  if (!id) { id = 'anon-' + Math.random().toString(36).slice(2) + Date.now(); localStorage.setItem('alphamum_session_id', id); }
-  const data = { 'form-name': formName, modul: moduleLabel, session_id: id };
-  document.querySelectorAll('textarea').forEach(t => data[t.dataset.key] = t.value);
-  fetch('/', { method: 'POST', headers: {'Content-Type':'application/x-www-form-urlencoded'}, body: encodeFormData(data) })
-    .then(() => {
-      document.getElementById('submit-button').disabled = true;
-      document.getElementById('submit-button').textContent = 'Eingesendet';
-      document.getElementById('submit-confirm').style.display = 'block';
-    }).catch(() => {
-      const c = document.getElementById('submit-confirm');
-      c.textContent = 'Senden hat nicht geklappt — versuch es gleich nochmal.';
-      c.style.color = 'var(--rose-deep)'; c.style.display = 'block';
-    });
+let id = localStorage.getItem('alphamum_session_id');
+if (!id) { id = 'anon-' + Math.random().toString(36).slice(2) + Date.now(); localStorage.setItem('alphamum_session_id', id); }
+const data = { 'form-name': formName, modul: moduleLabel, session_id: id };
+document.querySelectorAll('textarea').forEach(t => data[t.dataset.key] = t.value);
+fetch('/', { method: 'POST', headers: {'Content-Type':'application/x-www-form-urlencoded'}, body: encodeFormData(data) })
+.then(() => {
+document.getElementById('submit-button').disabled = true;
+document.getElementById('submit-button').textContent = 'Eingesendet';
+document.getElementById('submit-confirm').style.display = 'block';
+}).catch(() => {
+const c = document.getElementById('submit-confirm');
+c.textContent = 'Senden hat nicht geklappt — versuch es gleich nochmal.';
+c.style.color = 'var(--rose-deep)'; c.style.display = 'block';
+});
 }
 function collectAllModuleData() {
-  const keys = ['alphamum_modul1','alphamum_modul2','alphamum_modul3','alphamum_modul4','alphamum_modul5','alphamum_modul51','alphamum_modul52','alphamum_modul53','alphamum_modul6','alphamum_modul61','alphamum_modul62','alphamum_modul63','alphamum_modul64','alphamum_modul65','alphamum_modul66','alphamum_modul67','alphamum_modul68','alphamum_modul7','alphamum_modul71','alphamum_modul72','alphamum_modul73','alphamum_modul74','alphamum_modul75','alphamum_modul76','alphamum_modul77','alphamum_modul_exkurs_gesundheit','alphamum_modul8'];
-  const merged = {};
-  keys.forEach(k => {
-    try {
-      const raw = localStorage.getItem(k);
-      if (!raw) return;
-      const data = JSON.parse(raw);
-      Object.keys(data).forEach(field => {
-        if (field.indexOf('done_') === 0) return;
-        merged[field] = data[field];
-      });
-    } catch(e) {}
-  });
-  return merged;
+const keys = ['alphamum_modul1','alphamum_modul2','alphamum_modul3','alphamum_modul4','alphamum_modul5','alphamum_modul51','alphamum_modul52','alphamum_modul53','alphamum_modul6','alphamum_modul61','alphamum_modul62','alphamum_modul63','alphamum_modul64','alphamum_modul65','alphamum_modul66','alphamum_modul67','alphamum_modul68','alphamum_modul7','alphamum_modul71','alphamum_modul72','alphamum_modul73','alphamum_modul74','alphamum_modul75','alphamum_modul76','alphamum_modul77','alphamum_modul_exkurs_gesundheit','alphamum_modul8'];
+const merged = {};
+keys.forEach(k => {
+try {
+const raw = localStorage.getItem(k);
+if (!raw) return;
+const data = JSON.parse(raw);
+Object.keys(data).forEach(field => {
+if (field.indexOf('done_') === 0) return;
+merged[field] = data[field];
+});
+} catch(e) {}
+});
+return merged;
 }
 function submitAllAnswers() {
-  let id = localStorage.getItem('alphamum_session_id');
-  if (!id) { id = 'anon-' + Math.random().toString(36).slice(2) + Date.now(); localStorage.setItem('alphamum_session_id', id); }
-  const merged = collectAllModuleData();
-  const data = Object.assign({ 'form-name': 'alphamum-positionierung-gesamt', modul: 'Positionierung - Gesamt', session_id: id }, merged);
-  fetch('/', { method: 'POST', headers: {'Content-Type':'application/x-www-form-urlencoded'}, body: encodeFormData(data) })
-    .then(() => {
-      document.getElementById('submit-button').disabled = true;
-      document.getElementById('submit-button').textContent = 'Eingesendet';
-      document.getElementById('submit-confirm').style.display = 'block';
-    }).catch(() => {
-      const c = document.getElementById('submit-confirm');
-      c.textContent = 'Senden hat nicht geklappt — versuch es gleich nochmal.';
-      c.style.color = 'var(--rose-deep)'; c.style.display = 'block';
-    });
+let id = localStorage.getItem('alphamum_session_id');
+if (!id) { id = 'anon-' + Math.random().toString(36).slice(2) + Date.now(); localStorage.setItem('alphamum_session_id', id); }
+const merged = collectAllModuleData();
+const data = Object.assign({ 'form-name': 'alphamum-positionierung-gesamt', modul: 'Positionierung - Gesamt', session_id: id }, merged);
+fetch('/', { method: 'POST', headers: {'Content-Type':'application/x-www-form-urlencoded'}, body: encodeFormData(data) })
+.then(() => {
+document.getElementById('submit-button').disabled = true;
+document.getElementById('submit-button').textContent = 'Eingesendet';
+document.getElementById('submit-confirm').style.display = 'block';
+}).catch(() => {
+const c = document.getElementById('submit-confirm');
+c.textContent = 'Senden hat nicht geklappt — versuch es gleich nochmal.';
+c.style.color = 'var(--rose-deep)'; c.style.display = 'block';
+});
 }
-
-
 function getUserName() {
-  const params = new URLSearchParams(window.location.search);
-  const urlName = params.get('n');
-  if (urlName) { try { localStorage.setItem('alphamum_name', urlName); } catch(e) {} return urlName; }
-  return localStorage.getItem('alphamum_name');
+const params = new URLSearchParams(window.location.search);
+const urlName = params.get('n');
+if (urlName) { try { localStorage.setItem('alphamum_name', urlName); } catch(e) {} return urlName; }
+return localStorage.getItem('alphamum_name');
 }
 function applyName(name) {
-  document.querySelectorAll('.user-name-slot').forEach(el => el.textContent = name);
-  document.querySelectorAll('.user-initial-slot').forEach(el => el.textContent = name.charAt(0).toUpperCase());
+document.querySelectorAll('.user-name-slot').forEach(el => el.textContent = name);
+document.querySelectorAll('.user-initial-slot').forEach(el => el.textContent = name.charAt(0).toUpperCase());
 }
 function submitName() {
-  const val = document.getElementById('name-input').value.trim();
-  if (!val) return;
-  localStorage.setItem('alphamum_name', val);
-  document.getElementById('name-modal').style.display = 'none';
-  applyName(val);
+const val = document.getElementById('name-input').value.trim();
+if (!val) return;
+localStorage.setItem('alphamum_name', val);
+document.getElementById('name-modal').style.display = 'none';
+applyName(val);
 }
 function initNameGate() {
-  const name = getUserName();
-  if (name) { applyName(name); return; }
-  document.getElementById('name-modal').style.display = 'flex';
+const name = getUserName();
+if (name) { applyName(name); return; }
+document.getElementById('name-modal').style.display = 'flex';
 }
 initNameGate();
-
 document.querySelectorAll('textarea').forEach(t => t.addEventListener('input', () => { saveState('alphamum_modul7'); updateProgress(); }));
 document.querySelectorAll('.checklist input[type=checkbox]').forEach(c => c.addEventListener('change', () => saveState('alphamum_modul7')));
 loadState('alphamum_modul7');
